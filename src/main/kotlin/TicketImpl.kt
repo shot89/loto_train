@@ -28,4 +28,10 @@ class TicketImpl:Ticket{
     override fun getTicket(): MutableList<MutableList<Int>> {
         return ticket
     }
+
+    override fun toString(): String {
+        return ticket.get(0).toString() +"\n" +
+                ticket.get(1).toString() +"\n" +
+                ticket.get(2).toString() +"\n"
+    }
 }

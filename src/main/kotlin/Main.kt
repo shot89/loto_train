@@ -43,7 +43,7 @@ suspend fun main() {
                             }
                         }
                         println(player.getName())
-                        println(ticket.getTicket())
+                        println(ticket)
                         println()
                     }
 
