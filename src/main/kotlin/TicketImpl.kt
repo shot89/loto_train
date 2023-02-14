@@ -2,7 +2,7 @@ import kotlin.random.Random
 
 class TicketImpl:Ticket{
 
-    var ticket = fillTicket()
+    private var ticket = fillTicket()
 
     override fun fillTicket(): MutableList<MutableList<Int>> {
         val listUniqueValues = mutableListOf<Int>()
@@ -22,6 +22,10 @@ class TicketImpl:Ticket{
                 stringTicket = mutableListOf()
             }
         }
+        return ticket
+    }
+
+    override fun getTicket(): MutableList<MutableList<Int>> {
         return ticket
     }
 }
